@@ -53,21 +53,40 @@
 </nav>
 
 <!-- HERO -->
-<section id="home" class="hero-section text-center text-lg-start">
+<section id="home" class="hero-section d-flex align-items-center" style="min-height:100vh;">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <h1 class="display-4 fw-bold">Hola, soy <span class="text-warning">Johan Guerrero</span></h1>
-        <p class="lead mb-4">Docente | Desarrollador en formación | Gestor social | </p>
-        <a href="#projects" class="btn btn-warning btn-lg me-3"><i class="fas fa-eye"></i> Ver Proyectos</a>
-        <a href="#contact" class="btn btn-outline-light btn-lg"><i class="fas fa-envelope"></i> Contacto</a>
+    <div class="row align-items-center justify-content-between g-5">
+      
+      <!-- Columna de texto -->
+      <div class="col-12 col-lg-6 text-center text-lg-start">
+        <h1 class="display-3 fw-bold mb-3">
+          Hola, soy <span class="text-warning">Johan Guerrero</span>
+        </h1>
+        <p class="lead mb-4 text-light-emphasis">
+          Docente | Desarrollador en formación | Gestor social
+        </p>
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
+          <a href="#projects" class="btn btn-warning btn-lg">
+            <i class="fas fa-eye fa-sm me-2"></i> Ver Proyectos
+          </a>
+          <a href="#contact" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-envelope fa-sm me-2"></i> Contacto
+          </a>
+        </div>
       </div>
-      <div class="col-lg-6 text-center">
-        <img src="img/johan.jpg" alt="Foto Johan" class="rounded-circle shadow-lg" width="250">
+
+      <!-- Columna de imagen -->
+      <div class="col-12 col-lg-5 text-center">
+        <img src="https://raw.githubusercontent.com/profjohang/myhvbootstrap/refs/heads/main/project/perfil.jpg" 
+             alt="Foto Johan" 
+             class="rounded-circle shadow-lg border border-3 border-white"
+             style="width: 280px; height: 280px; object-fit: cover;">
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- SOBRE MÍ -->
 <section id="about" class="py-5 bg-light">
